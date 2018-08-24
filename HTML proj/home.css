@@ -1,0 +1,289 @@
+html {
+	/*
+  background: url(book3.jpg);
+	*/
+  background-color: lightblue;
+  background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	background-position: center center;
+	position: relative;
+}
+
+#title{
+	color: lavender;
+	text-align: center;
+}
+
+
+
+
+
+/*----- Tabs -----*/
+.tabs {
+width:100%;
+opacity: 0.9; 
+
+/*
+display:inline-block; */
+/*margin: auto;
+align-content: center; */
+}
+
+#tab2 {
+
+/*	opacity: 0.75; */
+}
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
+display:block;
+clear:both;
+content:'';
+}
+.tab-links li {
+
+margin:0px 5px; 
+float:left; 
+list-style:none;
+}
+.tab-links a {
+padding:9px 55px;
+display:inline-block;
+border-radius:3px 3px 0px 0px;
+background:#7FB5DA;
+font-size:16px;
+font-weight:600;
+color:#4c4c4c;
+transition:all linear 0.15s;
+text-decoration: none;
+
+}
+.tab-links a:hover {
+background:#e6f2ff;
+/* background:#a7cce5; */
+text-decoration:none;
+}
+li.active a, li.active a:hover {
+background:#fff;
+
+color:#4c4c4c; 	
+}
+/*----- Content of Tabs -----*/
+.tab-content {
+padding:15px;
+border-radius:3px;
+box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+background:#fff;
+}
+
+
+
+
+
+.tab {
+display:none; 
+}
+.tab.active {
+display:block;
+}
+
+
+.fond{position:relative;padding-top:0px;top:0;left:0; right:0;bottom:0;
+}
+/* .fond  background-color:#00506b; */
+
+.style_prevu_kit
+{
+    display:inline-block;
+    border:0;
+    width: 180px;
+    height: 250px; 
+    object-fit: contain;
+       /* width:196px; 
+    height:210px;  */
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+
+}
+.style_prevu_kit:hover
+{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
+
+#book1 {
+	background:url(woods.png);
+	background-size: contain;
+	max-width: 100%;
+	max-height: auto;;
+
+	/* width: 100%;
+	height: auto; */
+}
+
+
+#book2 {
+	background:url(castle.png);
+	background-size: contain;
+
+}
+
+#book3 {
+	background:url(adulthood.png);
+	background-size: contain;
+}
+
+
+#book4 {
+	background:url(the_arrival.png);
+	background-size: contain;
+}
+
+#book5 {
+	background:url(true_grit.png);
+	background-size: contain;
+}
+
+
+#movie1 {
+  background:url(spirited.jpeg);
+  background-size: contain;
+  max-width: 100%;
+  max-height: auto;
+
+  /* width: 100%;
+  height: auto; */
+}
+
+
+#movie2 {
+  background:url(princess.jpeg);
+  background-size: contain;
+
+}
+
+#movie3 {
+  background:url(stranger.jpeg);
+  background-size: contain;
+}
+
+
+
+/* from https://codepen.io/DotFreelance/pen/aGbRby?page=1&  */
+.container {
+  margin: 5vh auto 0 auto;
+  height: 427px;
+  width: 330px;
+  perspective: 60em;
+  transform-style: preserve-3d;
+  @media screen and (max-width: 786px) {
+    margin-left: 50vw;
+  }
+}
+.square {
+  height: 427px;
+  width: 330px;
+  border: 1px solid lightgrey;
+  
+  position: absolute;
+  transition: all 1s cubic-bezier(0.815, 0.005, 0.180, 1.005);
+  transform-origin: center left;
+  &.cover {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/magazine_cover2.jpg');
+    -webkit-backface-visibility: hidden;
+  }
+  &.inside1 {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/magazine_left2.jpg') no-repeat top left;
+    background-size: cover;
+  }
+  &.inside2 {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/magazine_right2.jpg') no-repeat top left;
+    transform: translateZ(-1px);
+  }
+}
+
+.container.open .square {
+  &.cover, &.inside1 {
+    transform: rotateY(-.5turn);
+  }
+}
+
+.container.test1 {
+  background: red;
+}
+
+
+/* ends here */
+
+
+
+
+
+#footer {
+
+  
+  
+ 
+	color: black;
+	display: block;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+
+/*	float:bottom;
+/*	background-color: red;
+*/
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+.social-icons {
+  text-align: center;
+    margin-left: 600px;
+  }  
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:40px;
+  height:40px;
+  margin-right: 20px;
+}

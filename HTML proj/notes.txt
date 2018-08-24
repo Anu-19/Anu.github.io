@@ -1,0 +1,12 @@
+backgrounds
+https://elements.envato.com/
+
+inspiration
+https://www.creativebloq.com/web-design/examples-css-912710
+
+
+try to make simple book opening to read contents 
+from codepen  (from scratch?)
+
+or simple website without tabs
+
